@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wdth,wght@0,75..100,100..700;1,75..100,100..700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box  ;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" <width>;
+    padding-left: 10px;
+}
+
+nav {    
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" <width>;
+    display: flex;   
+    padding-right: 10px;
+}
+
+ul, li {
+    display:flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h3 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" <width>;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start ;
+    gap: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+.galeria article {
+    flex: 1 1 229px;
+    max-width: 450px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.galeria p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" <width>;
+    display: flex;
+    justify-content: center;
+    font-size: 7px;
+}
+
+@media(max-width: 670px){
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    ul a {
+        background-color: gray;
+    }
+
+    .logo {
+        font-size: 50px;
+    }
+
+    .galeria p {
+        font-size: 20px;
+    }
+
+}
+
